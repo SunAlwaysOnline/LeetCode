@@ -1,4 +1,4 @@
-package simple;
+package simple.phase1;
 
 /**
  * @author qcy
@@ -9,6 +9,8 @@ package simple;
  * 示例
  * 输入：1->2->4, 1->3->4
  * 输出：1->1->2->3->4->4
+ *
+ * 具体思路:https://blog.csdn.net/qq_33591903/article/details/82947389
  */
 
 public class Number21 {
