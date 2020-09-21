@@ -73,6 +73,6 @@ public class Number88 {
         new Number88().merge(nums1, 3, nums2, 3);
         Arrays.stream(nums1).forEach(System.out::println);
     }
-    
+
 }
 
