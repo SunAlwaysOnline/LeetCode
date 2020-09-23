@@ -1,5 +1,7 @@
 package medium.phase1;
 
+import method.Recall;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,7 +24,7 @@ import java.util.List;
  * [1,4],
  * ]
  */
-public class Number77 {
+public class Number77 implements Recall {
     private List<List<Integer>> result = new ArrayList<>();
     private List<Integer> path = new ArrayList<>();
 

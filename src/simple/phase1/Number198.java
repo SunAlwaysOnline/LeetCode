@@ -1,11 +1,12 @@
 package simple.phase1;
 
-import medium.phase1.Number78;
+import method.DP;
 
 /**
  * @author qcy
  * @create 2020/09/23 11:30:34
  * 198. 打家劫舍
+ * 动态规划
  * <p>
  * 你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
  * <p>
@@ -33,7 +34,7 @@ import medium.phase1.Number78;
  * 0 <= nums[i] <= 400
  * <p>
  */
-public class Number198 {
+public class Number198 implements DP {
     public int rob(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;
