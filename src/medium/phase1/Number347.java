@@ -29,6 +29,7 @@ import java.util.*;
  *
  */
 public class Number347 {
+    //堆排
     public int[] topKFrequent(int[] nums, int k) {
         //建立数字与其频率的映射关系
         Map<Integer, Integer> map = new HashMap<>();
@@ -68,6 +69,7 @@ public class Number347 {
         return result;
     }
 
+    //快排
     public int[] topKFrequent1(int[] nums, int k) {
         int[] result = new int[k];
         Map<Integer, Integer> map = new HashMap<>();
