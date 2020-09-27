@@ -54,9 +54,9 @@ public class Number106 {
 
     /**
      * @param inOrderStart   中序遍历下标开始值
-     * @param inOrderEnd     中序遍历下标开始值
+     * @param inOrderEnd     中序遍历下标结束值
      * @param postOrderStart 后序遍历下标开始值
-     * @param postOrderEnd   后序遍历下标开始值
+     * @param postOrderEnd   后序遍历下标结束值
      * @return
      */
     public TreeNode build(int inOrderStart, int inOrderEnd, int postOrderStart, int postOrderEnd) {
@@ -73,5 +73,5 @@ public class Number106 {
         root.right = build(rootIndex + 1, inOrderEnd, postOrderStart + rootIndex - inOrderStart, postOrderEnd - 1);
         return root;
     }
-    
+
 }
