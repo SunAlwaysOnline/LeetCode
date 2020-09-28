@@ -1,4 +1,4 @@
-package simple.phase1;
+package leetcode.simple.phase1;
 
 import java.util.HashMap;
 import java.util.Map;

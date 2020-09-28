@@ -1,4 +1,4 @@
-package medium.phase1;
+package leetcode.medium.phase1;
 
 import method.DFS;
 
