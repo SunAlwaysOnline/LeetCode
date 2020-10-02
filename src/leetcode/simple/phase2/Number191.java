@@ -1,5 +1,7 @@
 package leetcode.simple.phase2;
 
+import method.BitOperation;
+
 /**
  * @author qcy
  * @create 2020/10/02 16:40:43
@@ -26,7 +28,7 @@ package leetcode.simple.phase2;
  * 解释：输入的二进制串 11111111111111111111111111111101 中，共有 31 位为 '1'。
  *
  */
-public class Number191 {
+public class Number191 implements BitOperation {
 
     //利用掩码按位与
     public int hammingWeight1(int n) {
