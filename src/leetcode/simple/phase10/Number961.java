@@ -1,4 +1,4 @@
-package leetcode.simple.phase2;
+package leetcode.simple.phase10;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package leetcode.simple.phase1;
+package leetcode.simple.phase15;
 
 /**
  * @author qcy
