@@ -51,5 +51,5 @@ public class Number349 {
 
         return resultArray;
     }
-    
+
 }
