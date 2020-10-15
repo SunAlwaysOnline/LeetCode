@@ -1,5 +1,8 @@
 package leetcode.simple.phase2;
 
+import method.Iteration;
+import method.Recursion;
+
 import java.util.LinkedList;
 
 /**
@@ -34,7 +37,7 @@ import java.util.LinkedList;
  * <p>
  * 你可以运用递归和迭代两种方法解决这个问题吗？
  */
-public class Number101 {
+public class Number101 implements Recursion, Iteration {
 
     public class TreeNode {
         int val;
