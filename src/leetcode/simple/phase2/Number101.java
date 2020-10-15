@@ -5,35 +5,34 @@ import java.util.LinkedList;
 /**
  * @author qcy
  * @create 2020/10/15 13:39:15
- *
+ * <p>
  * 101. 对称二叉树
- *
+ * <p>
  * 给定一个二叉树，检查它是否是镜像对称的。
- *
+ * <p>
  *  
- *
+ * <p>
  * 例如，二叉树 [1,2,2,3,4,4,3] 是对称的。
- *
- *     1
- *    / \
- *   2   2
- *  / \ / \
+ * <p>
+ * 1
+ * / \
+ * 2   2
+ * / \ / \
  * 3  4 4  3
  *  
- *
+ * <p>
  * 但是下面这个 [1,2,2,null,3,null,3] 则不是镜像对称的:
- *
- *     1
- *    / \
- *   2   2
- *    \   \
- *    3    3
+ * <p>
+ * 1
+ * / \
+ * 2   2
+ * \   \
+ * 3    3
  *  
- *
+ * <p>
  * 进阶：
- *
+ * <p>
  * 你可以运用递归和迭代两种方法解决这个问题吗？
- *
  */
 public class Number101 {
 
@@ -49,21 +48,30 @@ public class Number101 {
 
     //递归解决
     public boolean isSymmetric(TreeNode root) {
-        return check(root, root);
-    }
-
-    private boolean check(TreeNode leftNode, TreeNode rightNode) {
-        if (leftNode == null && rightNode == null) {
+        if (root==null){
             return true;
         }
-
-        if (leftNode == null || rightNode == null) {
-            return false;
-        }
-
-        return leftNode.val == rightNode.val && check(leftNode.left, rightNode.right) && check(leftNode.right, rightNode.left);
+        return check(root.left, root.right);
     }
 
+    private boolean check(TreeNode p, TreeNode q) {
+        //两个结点都为null
+        if (p == null && q == null) {
+            return true;
+        }
+        //其中一个结点为null
+        if (p == null || q == null) {
+            return false;
+        }
+        //两个结点的值不相等
+        if (p.val != q.val) {
+            return false;
+        }
+        //继续判断p的左孩子与q的右孩子是否相等,p的右孩子与q的左孩子是否相等
+        return check(p.left, q.right) && check(p.right, q.left);
+    }
+
+    //迭代解决
     public boolean isSymmetric1(TreeNode root) {
         if (root == null) {
             return true;
@@ -75,15 +83,19 @@ public class Number101 {
         while (!linkedList.isEmpty()) {
             TreeNode p = linkedList.removeFirst();
             TreeNode q = linkedList.removeFirst();
+            //两个结点都为null
             if (p == null && q == null) {
                 continue;
             }
+            //其中一个结点为null
             if (p == null || q == null) {
                 return false;
             }
+            //两个结点的值不相等
             if (p.val != q.val) {
                 return false;
             }
+            //将处于镜像位置上的结点入队
             linkedList.add(p.left);
             linkedList.add(q.right);
 
@@ -93,5 +105,6 @@ public class Number101 {
 
         return true;
     }
+
 
 }
