@@ -46,5 +46,5 @@ public class Number1295 {
         }
         return count;
     }
-    
+
 }
