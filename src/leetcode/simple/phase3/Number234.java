@@ -21,7 +21,7 @@ public class Number234 {
             val = x;
         }
     }
-    
+
     public boolean isPalindrome(ListNode head) {
 
         List<Integer> list = new ArrayList<>();
