@@ -28,9 +28,10 @@ import method.BitOperation;
  * 解释：输入的二进制串 11111111111111111111111111111101 中，共有 31 位为 '1'。
  *
  */
-public class Number191 implements BitOperation {
+public class Number191{
 
     //利用掩码按位与
+    @BitOperation
     public int hammingWeight1(int n) {
         int sum = 0;
         int mask = 1;
@@ -46,6 +47,7 @@ public class Number191 implements BitOperation {
     }
 
     //利用n&(n-1)将最后一个的1位变为0
+    @BitOperation
     public int hammingWeight(int n) {
         int sum = 0;
 

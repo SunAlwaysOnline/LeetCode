@@ -42,8 +42,9 @@ import method.BitOperation;
  * 0 <= start <= 1000
  * n == nums.length
  */
-public class Number1486 implements BitOperation {
+public class Number1486 {
 
+    @BitOperation
     public int xorOperation(int n, int start) {
         int result = start;
 
