@@ -43,7 +43,7 @@ import method.Maths;
  * nums 中的所有数字都 独一无二
  *
  */
-public class NuMber268 {
+public class Number268 {
 
     @Maths
     public int missingNumber(int[] nums) {
@@ -59,6 +59,6 @@ public class NuMber268 {
 
     public static void main(String[] args) {
         int[] nums = {9, 6, 4, 2, 3, 5, 7, 0, 1};
-        System.out.println(new NuMber268().missingNumber(nums));
+        System.out.println(new Number268().missingNumber(nums));
     }
 }
