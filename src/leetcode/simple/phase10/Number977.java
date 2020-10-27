@@ -30,8 +30,9 @@ import java.util.Arrays;
  * A 已按非递减顺序排序。
  *
  */
-public class Number977 implements DoublePointer {
+public class Number977 {
 
+    @DoublePointer
     public int[] sortedSquares1(int[] A) {
         if (A == null) {
             return null;
