@@ -37,7 +37,7 @@ import java.util.LinkedList;
  * <p>
  * 你可以运用递归和迭代两种方法解决这个问题吗？
  */
-public class Number101 implements Recursion, Iteration {
+public class Number101 implements Iteration {
 
     public class TreeNode {
         int val;
@@ -50,8 +50,9 @@ public class Number101 implements Recursion, Iteration {
     }
 
     //递归解决
+    @Recursion
     public boolean isSymmetric(TreeNode root) {
-        if (root==null){
+        if (root == null) {
             return true;
         }
         return check(root.left, root.right);
