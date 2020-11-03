@@ -1,4 +1,4 @@
-package leetcode.simple.phase3;
+package leetcode.medium.phase3;
 
 import method.DFS;
 import method.Iteration;

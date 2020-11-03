@@ -1,4 +1,4 @@
-package leetcode.simple.phase1;
+package leetcode.medium.phase1;
 
 import method.Iteration;
 import method.Recursion;
