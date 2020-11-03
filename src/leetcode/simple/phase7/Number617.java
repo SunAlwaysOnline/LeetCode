@@ -29,7 +29,7 @@ import method.DFS;
  * 注意: 合并必须从两个树的根节点开始。
  *
  */
-public class Number617 implements DFS {
+public class Number617 {
 
     public class TreeNode {
         int val;
@@ -41,6 +41,7 @@ public class Number617 implements DFS {
         }
     }
 
+    @DFS
     public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
         //对应位置上的节点为空
         if (t1 == null) {

@@ -26,7 +26,7 @@ import method.DFS;
  * 注意：两结点之间的路径长度是以它们之间边的数目表示。
  *
  */
-public class Number543 implements DFS {
+public class Number543 {
     public class TreeNode {
         int val;
         TreeNode left;
@@ -45,6 +45,7 @@ public class Number543 implements DFS {
     }
 
     //找出以node为节点的最大深度
+    @DFS
     private int dfs(TreeNode node) {
         if (node == null) {
             return 0;

@@ -37,13 +37,14 @@ import method.DFS;
  * 解释: 每座岛屿只能由水平和/或竖直方向上相邻的陆地连接而成。
  *
  */
-public class Number200 implements DFS {
+public class Number200 {
 
     //              (m-1,n)
     //      (m,n-1) (m, n ) (m,n+1)
     //              (m+1,n)
     char[][] map;
 
+    @DFS
     public int numIslands(char[][] grid) {
         map = grid;
         int sum = 0;

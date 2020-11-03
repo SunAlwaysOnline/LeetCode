@@ -17,7 +17,7 @@ import java.util.List;
  * 树的深度不会超过 1000。
  * 树的节点总不会超过 5000。
  */
-public class Number559 implements DFS {
+public class Number559 {
 
     class Node {
         public int val;
@@ -36,6 +36,7 @@ public class Number559 implements DFS {
         }
     }
 
+    @DFS
     public int maxDepth(Node root) {
         if (root == null) {
             return 0;
