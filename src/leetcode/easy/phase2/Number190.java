@@ -6,7 +6,7 @@ import method.BitOperation;
  * @author qcy
  * @create 2020/11/05 14:07:48
  * 190. 颠倒二进制位
- * 
+ *
  * 颠倒给定的 32 位无符号整数的二进制位。
  *
  * 示例 1：
