@@ -1,4 +1,4 @@
-package concurrency.easy.phase12;
+package concurrency.medium.phase12;
 
 /**
  * @author qcy
