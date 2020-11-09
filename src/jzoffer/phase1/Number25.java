@@ -1,4 +1,4 @@
-package jzoffer;
+package jzoffer.phase1;
 
 /**
  * @author qcy
@@ -14,7 +14,7 @@ package jzoffer;
  *
  * 0 <= 链表长度 <= 1000
  */
-public class Offer25 {
+public class Number25 {
 
     public class ListNode {
         int val;
