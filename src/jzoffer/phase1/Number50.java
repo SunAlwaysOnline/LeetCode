@@ -51,7 +51,7 @@ public class Number50 {
     }
 
     public static void main(String[] args) {
-        String s = "cc";
+        String s = "abcd";
         System.out.println(new Number50().firstUniqChar(s));
     }
 
