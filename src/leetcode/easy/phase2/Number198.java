@@ -34,7 +34,8 @@ import method.DP;
  * 0 <= nums[i] <= 400
  * <p>
  */
-public class Number198 implements DP {
+public class Number198 {
+    @DP
     public int rob(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;
