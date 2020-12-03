@@ -65,5 +65,5 @@ public class Number30 {
             return -1;
         }
     }
-    
+
 }
