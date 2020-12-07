@@ -1,5 +1,9 @@
 package jzoffer.phase1;
 
+import complexity.SpaceComplexity;
+import complexity.TimeComplexity;
+import method.DP;
+
 /**
  * @author qcy
  * @create 2020/12/07 16:40:08
@@ -28,6 +32,9 @@ package jzoffer.phase1;
  */
 public class Number10dot2 {
 
+    @DP
+    @SpaceComplexity("O(n)")
+    @TimeComplexity("O(n)")
     public int numWays(int n) {
         if (n == 0) {
             return 1;
