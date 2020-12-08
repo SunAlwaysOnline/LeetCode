@@ -24,10 +24,11 @@ import java.util.List;
  * [1,4],
  * ]
  */
-public class Number77 implements Recall {
+public class Number77 {
     private List<List<Integer>> result = new ArrayList<>();
     private List<Integer> path = new ArrayList<>();
 
+    @Recall
     public List<List<Integer>> combine(int n, int k) {
         dfs(n, k, 1);
         return result;
