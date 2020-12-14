@@ -43,7 +43,8 @@ import java.util.Stack;
  * pop、top 和 getMin 操作总是在 非空栈 上调用。
  *
  */
-public class Number155 implements Design {
+@Design
+public class Number155 {
 
     class MinStack {
         //使用辅助栈minStack,栈顶保存当时的最小值
