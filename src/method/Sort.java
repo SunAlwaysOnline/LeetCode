@@ -11,4 +11,8 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface Sort {
+    //排序方式
+    //quick 快速排序
+    //heap 堆排序
+    String way() default "sort";
 }
