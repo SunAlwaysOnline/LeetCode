@@ -1,4 +1,4 @@
-package jzoffer.phase1;
+package jzoffer.easy.phase1;
 
 import java.util.LinkedList;
 import java.util.Queue;

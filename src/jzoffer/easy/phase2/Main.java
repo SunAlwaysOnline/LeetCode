@@ -1,4 +1,4 @@
-package jzoffer.phase2;
+package jzoffer.easy.phase2;
 
 /**
  * @author qcy
