@@ -1,4 +1,4 @@
-package interview.phase18;
+package interview.easy.phase18;
 
 import complexity.SpaceComplexity;
 import complexity.TimeComplexity;

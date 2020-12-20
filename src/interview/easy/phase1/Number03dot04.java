@@ -1,4 +1,4 @@
-package interview.phase1;
+package interview.easy.phase1;
 
 import method.Classic;
 
