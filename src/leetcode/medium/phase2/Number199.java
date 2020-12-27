@@ -1,4 +1,4 @@
-package leetcode.medium.phase1;
+package leetcode.medium.phase2;
 
 import complexity.SpaceComplexity;
 import complexity.TimeComplexity;
