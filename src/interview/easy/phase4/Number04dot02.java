@@ -1,5 +1,11 @@
 package interview.easy.phase4;
 
+import complexity.SpaceComplexity;
+import complexity.TimeComplexity;
+import datastructure.BinaryTree;
+import method.Classic;
+import method.Optimal;
+
 /**
  * @author qcy
  * @create 2021/01/01 20:43:00
@@ -19,6 +25,8 @@ package interview.easy.phase4;
  *      -10  5
  *
  */
+@BinaryTree
+@Classic
 public class Number04dot02 {
     public class TreeNode {
         int val;
@@ -30,6 +38,9 @@ public class Number04dot02 {
         }
     }
 
+    @Optimal
+    @SpaceComplexity("O(logn)")
+    @TimeComplexity("O(n)")
     public TreeNode sortedArrayToBST(int[] nums) {
         return dfs(nums, 0, nums.length - 1);
     }
