@@ -1,4 +1,4 @@
-package interview.medium.phase1;
+package jzoffer.easy.phase1;
 
 import complexity.SpaceComplexity;
 import complexity.TimeComplexity;

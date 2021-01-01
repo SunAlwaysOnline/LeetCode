@@ -1,4 +1,4 @@
-package interview.medium.phase17;
+package interview.medium.phase16;
 
 import method.BitOperation;
 import method.Classic;
