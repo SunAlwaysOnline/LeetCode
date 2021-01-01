@@ -1,4 +1,4 @@
-package interview.easy.phase18;
+package interview.easy.phase17;
 
 import method.BitOperation;
 import method.Classic;

@@ -1,4 +1,4 @@
-package interview.easy.phase1;
+package interview.easy.phase2;
 
 import datastructure.LinkedList;
 
