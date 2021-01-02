@@ -1,5 +1,8 @@
 package jzoffer.easy.phase1;
 
+import datastructure.LinkedList;
+import method.Classic;
+
 /**
  * @author qcy
  * @create 2021/01/02 20:56:00
@@ -29,6 +32,8 @@ package jzoffer.easy.phase1;
  * 若使用 C 或 C++ 语言，你不需要 free 或 delete 被删除的节点
  *
  */
+@Classic
+@LinkedList
 public class Number18 {
 
     public class ListNode {
