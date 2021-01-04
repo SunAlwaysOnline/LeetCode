@@ -7,7 +7,7 @@ import java.lang.annotation.*;
  * @create 2020/10/02 17:20:40
  * 位运算
  */
-@Target({ElementType.METHOD})
+@Target({ElementType.METHOD, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface BitOperation {
