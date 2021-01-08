@@ -7,7 +7,7 @@ import java.lang.annotation.*;
  * @create 2020/10/17 21:00:20
  * 数学解法
  */
-@Target({ElementType.METHOD})
+@Target({ElementType.METHOD, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface Maths {
