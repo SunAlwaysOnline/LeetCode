@@ -14,5 +14,5 @@ public @interface Sort {
     //排序方式
     //quick 快速排序
     //heap 堆排序
-    String way() default "sort";
+    StringOperation way() default "sort";
 }
