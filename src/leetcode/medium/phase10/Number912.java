@@ -44,7 +44,7 @@ public class Number912 {
     }
 
     @SpaceComplexity("O(nlogn)")
-    @TimeComplexity("O(n)")
+    @TimeComplexity("O(nlogn)")
     private void quickSort(int[] nums, int left, int right) {
         if (left > right) {
             return;
