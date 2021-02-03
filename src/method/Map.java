@@ -7,7 +7,7 @@ import java.lang.annotation.*;
  * @create 2020/10/21 15:24:09
  * 字典
  */
-@Target({ElementType.METHOD})
+@Target({ElementType.METHOD, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface Map {
