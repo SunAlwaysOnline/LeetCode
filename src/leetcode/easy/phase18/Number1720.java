@@ -1,4 +1,4 @@
-package leetcode.easy.phase57;
+package leetcode.easy.phase18;
 
 /**
  * @author qcy
@@ -33,7 +33,7 @@ package leetcode.easy.phase57;
  * 0 <= first <= 105
  *
  */
-public class Number5469 {
+public class Number1720 {
 
     public int[] decode(int[] encoded, int first) {
         int[] res = new int[encoded.length + 1];
@@ -48,7 +48,7 @@ public class Number5469 {
     public static void main(String[] args) {
         int[] encoded = {1, 2, 3};
         int first = 1;
-        for (int i : new Number5469().decode(encoded, first)) {
+        for (int i : new Number1720().decode(encoded, first)) {
             System.out.println(i);
         }
     }
