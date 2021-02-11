@@ -1,4 +1,4 @@
-package leetcode.medium.phase8;
+package leetcode.easy.phase8;
 
 import method.Design;
 import method.Orignal;
