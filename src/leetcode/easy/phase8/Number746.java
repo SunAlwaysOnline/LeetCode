@@ -56,7 +56,7 @@ public class Number746 {
         return dp[length];
     }
 
-    
+
     public static void main(String[] args) {
         int[] cost = {0, 1, 1, 0};
         int i = new Number746().minCostClimbingStairs(cost);
