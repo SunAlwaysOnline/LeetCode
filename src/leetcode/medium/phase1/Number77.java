@@ -1,5 +1,7 @@
 package leetcode.medium.phase1;
 
+import method.Classic;
+import method.PermutationAndCombination;
 import method.Recall;
 
 import java.util.ArrayList;
@@ -24,6 +26,8 @@ import java.util.List;
  * [1,4],
  * ]
  */
+@Classic
+@PermutationAndCombination
 public class Number77 {
     private List<List<Integer>> result = new ArrayList<>();
     private List<Integer> path = new ArrayList<>();
