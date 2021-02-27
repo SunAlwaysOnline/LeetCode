@@ -7,7 +7,7 @@ import java.lang.annotation.*;
  * @create 2020/09/23 13:56:02
  * 动态规划
  */
-@Target({ElementType.METHOD})
+@Target({ElementType.METHOD, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface DP {
