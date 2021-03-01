@@ -14,6 +14,12 @@ public class ListUtil {
         System.out.println(str);
     }
 
+    public static <T> void printOut(List<List<T>> out) {
+        for (List<T> in : out) {
+            print(in);
+        }
+    }
+
     public static void main(String[] args) {
     }
 }
