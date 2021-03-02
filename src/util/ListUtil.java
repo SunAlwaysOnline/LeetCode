@@ -15,9 +15,7 @@ public class ListUtil {
     }
 
     public static <T> void printOut(List<List<T>> out) {
-        for (List<T> in : out) {
-            print(in);
-        }
+        out.forEach(ListUtil::print);
     }
 
     public static void main(String[] args) {
