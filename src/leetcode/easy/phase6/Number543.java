@@ -1,5 +1,7 @@
 package leetcode.easy.phase6;
 
+import datastructure.BinaryTree;
+import method.Classic;
 import method.DFS;
 
 /**
@@ -26,6 +28,8 @@ import method.DFS;
  * 注意：两结点之间的路径长度是以它们之间边的数目表示。
  *
  */
+@Classic
+@BinaryTree
 public class Number543 {
     public class TreeNode {
         int val;
