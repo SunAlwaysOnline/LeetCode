@@ -2,6 +2,7 @@ package leetcode.medium.phase8;
 
 import method.Classic;
 import method.DP;
+import method.Greedy;
 import method.Optimal;
 
 /**
@@ -38,7 +39,7 @@ import method.Optimal;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 @Classic
-@DP
+@Greedy
 public class Number714 {
 
     public int maxProfit(int[] prices, int fee) {
