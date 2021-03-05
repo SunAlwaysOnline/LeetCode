@@ -1,11 +1,13 @@
 package leetcode.easy.phase3;
 
+import method.Design;
+
 import java.util.Stack;
 
 /**
  * @author qcy
  * @create 2020/09/24 21:03:47
- *232. 用栈实现队列
+ * 232. 用栈实现队列
  * 使用栈实现队列的下列操作：
  *
  * push(x) -- 将一个元素放入队列的尾部。
@@ -32,6 +34,8 @@ import java.util.Stack;
  * 假设所有操作都是有效的 （例如，一个空的队列不会调用 pop 或者 peek 操作）。
  *
  */
+@Design
+@datastructure.Stack
 public class Number232 {
 
     class MyQueue {
