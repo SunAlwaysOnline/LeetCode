@@ -1,6 +1,7 @@
 package interview.medium.phase10;
 
 import datastructure.Array;
+import method.BinarySearch;
 import method.Classic;
 
 /**
@@ -29,6 +30,7 @@ import method.Classic;
  */
 @Classic
 @Array
+@BinarySearch
 public class Number10dot03 {
 
     public int search1(int[] nums, int target) {
