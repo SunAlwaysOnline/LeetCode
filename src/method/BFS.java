@@ -7,7 +7,7 @@ import java.lang.annotation.*;
  * @create 2020/11/05 09:26:40
  * 广度优先遍历 Breath First Search
  */
-@Target({ElementType.METHOD})
+@Target({ElementType.METHOD, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface BFS {
