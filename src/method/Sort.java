@@ -15,5 +15,6 @@ public @interface Sort {
     //quick 快速排序
     //heap 堆排序
     //merge 归并排序
+    //topology 拓扑排序
     String way() default "sort";
 }
