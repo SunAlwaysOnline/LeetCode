@@ -1,4 +1,4 @@
-package leetcode.medium;
+package leetcode.medium.phase1;
 
 import method.WaitForComplete;
 
