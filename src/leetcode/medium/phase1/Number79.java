@@ -81,6 +81,7 @@ public class Number79 {
         char temp = board[i][j];
         board[i][j] = '.';
 
+        //没有利用||提前终止的特性，可能会超时
         boolean up = dfs(board, i - 1, j, word, index + 1);
         boolean bottom = dfs(board, i + 1, j, word, index + 1);
         boolean left = dfs(board, i, j - 1, word, index + 1);
