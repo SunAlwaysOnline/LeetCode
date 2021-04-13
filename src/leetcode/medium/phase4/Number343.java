@@ -81,6 +81,7 @@ public class Number343 {
 
     private int dfs(int n) {
         if (n <= 3) {
+            mem[n] = n - 1;
             return n - 1;
         }
         if (mem[n] != 0) {
