@@ -1,5 +1,7 @@
 package leetcode.medium.phase1;
 
+import complexity.SpaceComplexity;
+import complexity.TimeComplexity;
 import method.Classic;
 import method.DFS;
 import method.Iteration;
@@ -44,6 +46,8 @@ import java.util.List;
 public class Number90 {
 
     @DFS
+    @SpaceComplexity("O(n*2^n)")
+    @TimeComplexity("O(n*2^n)")
     public List<List<Integer>> subsetsWithDup1(int[] nums) {
         List<List<Integer>> out = new ArrayList<>();
         Arrays.sort(nums);
