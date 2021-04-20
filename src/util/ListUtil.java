@@ -19,5 +19,10 @@ public class ListUtil {
     }
 
     public static void main(String[] args) {
+        String s="";
+        String[] split = s.split("],");
+        for(String i:split){
+            System.out.println(i+"]");
+        }
     }
 }
