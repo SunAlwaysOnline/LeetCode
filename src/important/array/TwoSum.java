@@ -18,11 +18,16 @@ public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
 
+        //2依赖7,7依赖2
+        //一开始2找不到7,为了防止接下来的数字依赖2,则先把2放入到map中
+        //7找到2,则直接找到答案
+        //本质上都是,A依赖B,找不到B的话,则先把自己放入到map中
+        //当接下来的B找到A时,可以将B也放入到A,防止之后或之前的对象依赖于B
         for (int i = 0; i < nums.length; i++) {
-            if (map.containsKey(nums[i])) {
-                return new int[]{map.get(nums[i]), i};
+            if (map.containsKey(target - nums[i])) {
+                return new int[]{map.get(target - nums[i]), i};
             }
-            map.put(target - nums[i], i);
+            map.put(nums[i], i);
         }
 
         return null;
