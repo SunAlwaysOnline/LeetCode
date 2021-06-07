@@ -9,7 +9,7 @@ package important.string;
  * 输出：3
  * 解释：最长公共子序列是 "ace"，它的长度为 3。
  */
-public class LongestCommonSub {
+public class LongestCommonSubSeq {
 
     //例如：s1="abcde"　　s2= "ace"，求两个字符串的公共子序列，答案是“ace”
     //

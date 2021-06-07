@@ -9,7 +9,7 @@ package important.string;
  * 输出: "bab"
  * 注意: "aba" 也是一个有效答案。
  */
-public class LongestPalindromeSub {
+public class LongestPalindromeSubStr {
 
     public String longestPalindrome(String s) {
         if (s == null || "".equals(s)) {
@@ -43,7 +43,7 @@ public class LongestPalindromeSub {
     }
 
     public static void main(String[] args) {
-        String result = new LongestPalindromeSub().longestPalindrome("babad");
+        String result = new LongestPalindromeSubStr().longestPalindrome("babad");
         System.out.println(result);
     }
 }
