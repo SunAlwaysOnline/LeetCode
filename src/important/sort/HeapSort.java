@@ -7,6 +7,8 @@ import complexity.TimeComplexity;
  * @author qcy
  * @create 2021/06/11 15:46:03
  * 堆排序
+ * https://www.cnblogs.com/chengxiao/p/6129630.html
+ * https://zhuanlan.zhihu.com/p/128892381
  */
 public class HeapSort {
 
