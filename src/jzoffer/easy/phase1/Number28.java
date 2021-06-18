@@ -7,40 +7,39 @@ import java.util.Queue;
  * @author qcy
  * @create 2020/11/30 10:39:03
  * 剑指 Offer 28. 对称的二叉树
- *
+ * <p>
  * 请实现一个函数，用来判断一棵二叉树是不是对称的。如果一棵二叉树和它的镜像一样，那么它是对称的。
- *
+ * <p>
  * 例如，二叉树 [1,2,2,3,4,4,3] 是对称的。
- *
+ * <p>
  *     1
  *    / \
  *   2   2
  *  / \ / \
  * 3  4 4  3
  * 但是下面这个 [1,2,2,null,3,null,3] 则不是镜像对称的:
- *
+ * <p>
  *     1
  *    / \
  *   2   2
  *    \   \
  *    3    3
- *
+ * <p>
  *  
- *
+ * <p>
  * 示例 1：
- *
+ * <p>
  * 输入：root = [1,2,2,3,4,4,3]
  * 输出：true
  * 示例 2：
- *
+ * <p>
  * 输入：root = [1,2,2,null,3,null,3]
  * 输出：false
  *  
- *
+ * <p>
  * 限制：
- *
+ * <p>
  * 0 <= 节点个数 <= 1000
- *
  */
 public class Number28 {
 
@@ -54,7 +53,7 @@ public class Number28 {
         }
     }
 
-    public boolean isSymmetric(TreeNode root) {
+    public boolean isSymmetric1(TreeNode root) {
         if (root == null) {
             return true;
         }
@@ -91,6 +90,41 @@ public class Number28 {
                 }
             }
         }
+        return true;
+    }
+
+    //迭代解决
+    public boolean isSymmetric(TreeNode root) {
+        if (root == null) {
+            return true;
+        }
+        LinkedList<TreeNode> linkedList = new LinkedList<>();
+        linkedList.add(root.left);
+        linkedList.add(root.right);
+
+        while (!linkedList.isEmpty()) {
+            TreeNode p = linkedList.removeFirst();
+            TreeNode q = linkedList.removeFirst();
+            //两个结点都为null
+            if (p == null && q == null) {
+                continue;
+            }
+            //其中一个结点为null
+            if (p == null || q == null) {
+                return false;
+            }
+            //两个结点的值不相等
+            if (p.val != q.val) {
+                return false;
+            }
+            //将处于镜像位置上的结点入队
+            linkedList.add(p.left);
+            linkedList.add(q.right);
+
+            linkedList.add(p.right);
+            linkedList.add(q.left);
+        }
+
         return true;
     }
 
