@@ -53,7 +53,7 @@ public class IteratorOrder {
     }
 
     //后序遍历
-    //即对(右、中、左的翻转)
+    //即对(中、右、左的翻转)
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
