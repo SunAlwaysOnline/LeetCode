@@ -5,10 +5,11 @@ import java.util.*;
 /**
  * @author qcy
  * @create 2021/06/30 21:04:30
+ * boss直聘
  * <p>
  * 合并k个有序数组
  */
-public class MergeArray {
+public class MergeKOrderArray {
 
     private int[] merge(List<int[]> arrays) {
         int m = arrays.size();
@@ -60,7 +61,7 @@ public class MergeArray {
         arrays.add(a2);
         arrays.add(a3);
 
-        int[] result = new MergeArray().merge(arrays);
+        int[] result = new MergeKOrderArray().merge(arrays);
         for (int i : result) {
             System.out.print(i);
         }
